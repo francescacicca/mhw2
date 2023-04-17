@@ -1,0 +1,124 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+:root {
+  --grid-size: 700px;
+  --margin-size: 20px;
+  --square-size: calc((var(--grid-size) / 3) - var(--margin-size));
+}
+
+
+.square {
+    height: 200px;
+    width: 200px;
+} 
+
+
+.choice-grid {
+    align-content: space-around;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    width: var(--grid-size);
+}
+  
+.choice-grid div {
+    max-width: calc(32.5% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+
+.backgroundColor {
+  background-color: #f4f4f4;
+}
+
+
+.choice-grid img.checkbox {
+    align-self: self-start;
+}
+
+.hidden {
+  opacity: 0.6;
+}
+
+
+.choice {
+  background-color: #cfe3ff;
+}
+
+
+#results {
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: normal;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.restartButton {
+   width: 100%;
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   background-color: #cecece;
+   color: black;
+   height: 50px;
+}
+
+.restartButton:hover {
+   background-color: #e0e0e0;
+   cursor: pointer;
+}
+
+.resultTitle  {
+  margin-top: -10px;
+  margin-bottom: 0px;
+}
+
+
+
+/* OTTIMIZZAZIONE MOBILE */
+
+
+@media (700px >= max-width > 500px) {
+   
+  body {
+    width: 95%;
+  }
+}
+
+
+
+@media (max-width: 500px) {
+  
+   body {
+    width: 95%;
+   }
+
+   header div span {
+    display: none;
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
